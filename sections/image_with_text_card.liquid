@@ -1,0 +1,192 @@
+<div id="section-{{ section.id }}" class="page-width page-width-desktop img-text-card">
+  <div
+    class="content-wrapper {% if section.settings.flexDirection == '0' %}direction-row{% else %}direction-row-reverse{% endif %}"
+  >
+    <div class="image-wrapper">
+      <img src="{{ section.settings.image | image_url }}" width="684" height="800" alt="Image">
+    </div>
+    <div class="text-content">
+      {% if section.settings.heading %}
+        <h2 class="main-heading">{{ section.settings.heading }}</h2>
+      {% endif %}
+      {% for block in section.blocks %}
+        <div class="block" id="block-{{ block.id }}">
+          {% if block.settings.heading %}
+            <h3>{{ block.settings.heading }}</h3>
+          {% endif %}
+          <p>{{ block.settings.content }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    margin: 4px 0;
+    max-height: 800px;
+  }
+  .content-wrapper .image-wrapper {
+    width: 50%;
+  }
+  .content-wrapper .main-heading {
+    font-family: Lora;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 74px;
+    text-align: left;
+    margin: 0;
+  }
+
+  .content-wrapper .text-content {
+    width: 50%;
+  }
+  .content-wrapper .text-content h3,
+  .content-wrapper .text-content p {
+    padding: 0;
+    margin: 0;
+  }
+  .content-wrapper .text-content h3 {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+  }
+  .content-wrapper .text-content p {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+  }
+  .content-wrapper img {
+    width: 100%;
+    gap: 0px;
+    border-radius: 24px;
+  }
+  .content-wrapper .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 16px;
+    background: rgba(244, 240, 234, 1);
+    padding: 32px;
+    border-radius: 24px;
+  }
+  .direction-row {
+    flex-direction: row;
+  }
+  .direction-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .direction-column {
+    flex-direction: column;
+  }
+  .direction-column-reverse {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 1024px) {
+    .img-text-card {
+      padding: 4px 16px;
+    }
+    .content-wrapper {
+      max-height: 100%;
+    }
+    .content-wrapper.direction-row,
+    .content-wrapper.direction-row-reverse {
+      flex-direction: column-reverse !important;
+    }
+    .content-wrapper .image-wrapper {
+      width: 100%;
+    }
+    .content-wrapper .text-content {
+      width: 100%;
+      padding: 16px;
+    }
+    .content-wrapper .main-heading {
+      font-family: Lora;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 42px;
+      text-align: left;
+    }
+    .content-wrapper img {
+      max-height: 422px;
+    }
+    .content-wrapper .text-content p {
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: left;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Image With Text Card",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "Enter your section heading here"
+    },
+    {
+      "type": "select",
+      "id": "flexDirection",
+      "label": "Image Position",
+      "options": [
+        { "value": "0", "label": "Image Left" },
+        { "value": "1", "label": "Image Right" }
+      ],
+      "default": "0"
+    },
+    {
+      "type": "select",
+      "id": "flexDirectionMB",
+      "label": "Image Position In Mobile",
+      "options": [
+        { "value": "0", "label": "Image Above" },
+        { "value": "1", "label": "Image Under" }
+      ],
+      "default": "0"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading_content_block",
+      "name": "Heading and Content Block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Block Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Block Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image With Text Card",
+      "category": "New Section"
+    }
+  ]
+}
+{% endschema %}
