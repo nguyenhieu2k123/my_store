@@ -1,210 +1,93 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "double_image_with_content_BHT9r8": {
+      "type": "double_image_with_content",
+      "settings": {
+        "heading": "Lorem ullamco",
+        "text_ne": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur eiusmod consectetur proident Lorem reprehenderit esse do anim velit in aliquip dolore ut officia. Consectetur reprehenderit proident do exercitation eu. Sunt fugiat pariatur elit est laboris quis. Esse mollit incididunt quis amet. Qui non irure incididunt laborum nisi cillum consequat aliquip aliquip cillum in. Ut excepteur labore voluptate tempor cupidatat dolor eiusmod do ipsum Lorem cupidatat do labore.</p><p>Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat consequat pariatur.</p>",
+        "left_img": "shopify://shop_images/image_88adefa1-8b4b-4189-87df-b83bf27f8b0e.png",
+        "right_img": "shopify://shop_images/image_a2ce530c-6965-45e8-ac93-953046722cad.png"
+      }
+    },
+    "image_with_text_card_ieTqyh": {
+      "type": "image_with_text_card",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "heading_content_block_FD6DwC": {
+          "type": "heading_content_block",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
+            "heading": "Excepteur eiusmod consectetur",
+            "content": "<p>Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat consequat pariatur.</p>"
           }
         },
-        "text": {
-          "type": "text",
+        "heading_content_block_rg7LPj": {
+          "type": "heading_content_block",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "heading": "Quis aliqua reprehenderit",
+            "content": "<p>Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat consequat pariatur.</p>"
           }
         },
-        "button": {
-          "type": "buttons",
+        "heading_content_block_w9xFFK": {
+          "type": "heading_content_block",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "heading": "Ad sit cillum amet duis quis commodo",
+            "content": "<p>Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat consequat pariatur.</p>"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "button"
+        "heading_content_block_FD6DwC",
+        "heading_content_block_rg7LPj",
+        "heading_content_block_w9xFFK"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "heading": "Lorem ipsum",
+        "flexDirection": "0",
+        "flexDirectionMB": "0",
+        "image": "shopify://shop_images/Hero_Image_696px_Desktop.jpg"
       }
     },
-    "rich_text": {
-      "type": "rich-text",
+    "image_with_text_card_eHpEAn": {
+      "type": "image_with_text_card",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "heading_content_block_3fPPi3": {
+          "type": "heading_content_block",
           "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
+            "heading": "",
+            "content": "<p>Ex laborum ea qui consectetur mollit commodo eiusmod culpa dolor cupidatat. Ullamco dolore irure ea sit elit velit non officia. Ad eu reprehenderit in et voluptate mollit. Reprehenderit incididunt magna consequat enim sit eiusmod est dolor laborum cupidatat</p>"
           }
         },
-        "text": {
-          "type": "text",
+        "heading_content_block_GWQ6bc": {
+          "type": "heading_content_block",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "heading": "",
+            "content": "<p>Ipsum minim mollit irure dolore. Sint fugiat deserunt dolor aute enim et cillum adipisicing cillum nostrud anim. Sit dolore incididunt dolore do sunt pariatur consectetur id qui pariatur eu incididunt adipisicing. Irure sint fugiat officia veniam consectetur. Esse laborum amet aliqua ad in sunt labore duis.</p>"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "heading_content_block_3fPPi3",
+        "heading_content_block_GWQ6bc"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "show_view_all": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "heading_size": "h1",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "heading": "Mollit aliquip do ipsum consectetur",
+        "flexDirection": "1",
+        "flexDirectionMB": "0",
+        "image": "shopify://shop_images/image.png"
       }
     }
   },
   "order": [
-    "image_banner",
-    "rich_text",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "double_image_with_content_BHT9r8",
+    "image_with_text_card_ieTqyh",
+    "image_with_text_card_eHpEAn"
   ]
 }
